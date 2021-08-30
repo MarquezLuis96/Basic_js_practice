@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/styles/css/geometric_figures.css"/>
+        <link rel="shortcut icon" href="./src/images/ico/favicon.ico" type="image/x-icon">
+        <title>Geometric Figures</title>
+    </head>
+
+    <body>
+        <main>
+            <h2>Geometric Figures area calculator:</h2>
+            <section class="cards-container">
+                <section>
+                    <img src="./src/images/png/square.png" alt="Square"/>
+                    <h3>Square</h3>
+                    <input class="text-input" type="text" placeholder="Side (cm)" id="square-side">
+                    <div class="text-input"></div>
+                    <input id="btn-square-area" class="btn-input" type="button" value="Calculate Area">
+                    <div id="square-area">
+                        <p>Area: </p>
+                    </div>
+                </section>
+    
+                <section>
+                    <img src="./src/images/png/rectangle.png" alt="Rectangle"/>
+                    <h3>Rectangle</h3>
+                    <input class="text-input" type="text" placeholder="Base (cm)" id="rectangle-base">
+                    <input class="text-input" type="text" placeholder="Height (cm)"id="rectangle-height">
+                    <input id="btn-rectangle-area" class="btn-input" type="button" value="Calculate Area">
+                    <div id="rectangle-area">
+                        <p>Area: </p>
+                    </div>
+                </section>
+    
+                <section>
+                    <img src="./src/images/png/triangle.png" alt="Triangle"/>
+                    <h3>Triangle</h3>
+                    <input class="text-input" type="text" placeholder="Base (cm)" id="triangle-base">
+                    <input class="text-input" type="text" placeholder="Height (cm)"id="triangle-height">
+                    <input id="btn-triangle-area" class="btn-input" type="button" value="Calculate Area">
+                    <div id="triangle-area">
+                        <p>Area: </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <script src="./src/scripts/js/geometric_figures.js"></script>
+    </body>
+</html>
