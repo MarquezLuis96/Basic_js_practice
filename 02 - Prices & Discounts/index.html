@@ -9,9 +9,10 @@
     </head>
     <body>
         <main>
+            <h1>Final Price Calculator  (Discount & Taxes)</h1>
             <section class = "card-container">
                 <div class = "card-container__form">
-                    <form action="">
+                    <form action="#">
                         <label for="pprice">Product Price: </label>
                         <input class="input_number" type="number" name="pprice" id="pprice" placeholder="Price $"/>
 
@@ -26,17 +27,17 @@
                 </div>
 
                 <div class="card-container__result">
-                    <p>Price (%):<span class="percentaje-price"></span></p>
-                    <p>Price($):<span class="money-price"></span></p>
+                    <p>Price (%):<span id="print-percentaje-price"></span></p>
+                    <p>Price($):<span id="print-money-price"></span></p>
 
-                    <p>Discount (%):<span class="percentaje-discount"></span></p>
-                    <p>Discount($):<span class="money-discount"></span></p>
+                    <p>Discount (%):<span id="print-percentaje-discount"></span></p>
+                    <p>Discount($):<span id="print-money-discount"></span></p>
 
-                    <p>Taxes (%):<span class="percentaje-taxes"></span></p>
-                    <p>Taxes($):<span class="money-taxes"></span></p>
+                    <p>Taxes (%):<span id="print-percentaje-taxes"></span></p>
+                    <p>Taxes($):<span id="print-money-taxes"></span></p>
                     
-                    <p>Final price(%):<span class="percentaje-finalprice"></span></p>
-                    <p>Final price($):<span class="money-finalprice"></span></p>
+                    <p>Final price(%):<span id="print-percentaje-finalprice"></span></p>
+                    <p>Final price($):<span id="print-money-finalprice"></span></p>
                 </div>
             </section>
         </main>
