@@ -9,6 +9,30 @@
     </head>
 
     <body>
+        <main>
+            <section class="addPerson">
+                <form action="#">
+                    <label for="personCountryList">Country</label>
+                    <input type="text" id="personCountryList" list="CountryList"/>
+                        <datalist id="CountryList">
+                            <option value="Colombia">Colombia</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </datalist>
+
+                    <label for="personName">Name</label>
+                    <input type="text" id="personName"/>
+
+                    <input type="button" value="Add Person"/>
+                </form>
+            </section>
+
+            <section class="list">
+                <!---->
+            </section>
+        </main>
+
         <script src="./src/scripts/js/salary.js"></script>
+        <script src="./src/scripts/js/analysis.js"></script>
     </body>
 </html>
