@@ -10,26 +10,43 @@
 
     <body>
         <main>
-            <section class="addPerson">
-                <form action="#">
-                    <label for="personCountryList">Country</label>
-                    <input type="text" id="personCountryList" list="CountryList"/>
-                        <datalist id="CountryList">
-                            <option value="Colombia">Colombia</option>
-                            <option value="Uruguay">Uruguay</option>
-                            <option value="Venezuela">Venezuela</option>
-                        </datalist>
+            <div class="cards__container">
+                <div class="cardAdd">
+                    <section class="addPerson">
+                        <form action="#">
+                            <div>
+                                <label for="personCountryList">Country</label>
+                                <input type="text" id="personCountryList" list="CountryList"/>
+                                    <datalist id="CountryList">
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                    </datalist>
+                            </div>
 
-                    <label for="personName">Name</label>
-                    <input type="text" id="personName"/>
+                            <div>
+                                <label for="personName">Name</label>
+                                <input type="text" id="personName"/>
+                            </div>
 
-                    <input type="button" value="Add Person"/>
-                </form>
-            </section>
+                            <div>
+                                <label for="personSalary">Salary</label>
+                            <input type="number" id="personSalary">
+                            </div>
 
-            <section class="list">
-                <!---->
-            </section>
+                            <div class="btn-add-container">
+                                <input type="button" value="Add Person" id="buttonAdd"/>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+                <div class="cardPrint">
+                    <section class="list">
+                        <!---->
+                    </section>
+                </div>
+            </div>
         </main>
 
         <script src="./src/scripts/js/salary.js"></script>

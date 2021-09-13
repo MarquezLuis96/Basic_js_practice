@@ -20,3 +20,12 @@ function addTo(countryName, personName, personSalary) {
         }
     );
 }
+
+//EVENT LISTENER AND ADDING TO A LIST
+var buttonAdd = document.getElementById("buttonAdd");
+buttonAdd.addEventListener('click', function(event) {
+    var pcountry = document.getElementById("personCountryList").value;
+    var pname = document.getElementById("personName").value;
+    var psalary = document.getElementById("personSalary").value;
+    addTo(pcountry, pname, psalary);
+});
