@@ -27,6 +27,7 @@ main .cards__container {
     width: 85%;
     height: 90vh;
     margin: 0 auto;
+    border-radius: 10px;
     display: flex;
     align-self: center;
     justify-content: space-around;
@@ -38,11 +39,20 @@ main .cards__container .cardAdd {
     width: 35%;
     height: 65%;
     display: flex;
+    border-radius: 15px;
     background-color: yellow;
 }
 
 .cardAdd .addPerson {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardAdd .addPerson h2 {
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .cardAdd .addPerson form {
@@ -68,5 +78,6 @@ main .cards__container .cardAdd {
 main .cards__container .cardPrint {
     width: 35%;
     height: 65%;
+    border-radius: 15px;
     background-color: magenta;
 }

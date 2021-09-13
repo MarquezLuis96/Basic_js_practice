@@ -13,6 +13,7 @@
             <div class="cards__container">
                 <div class="cardAdd">
                     <section class="addPerson">
+                        <h2>Add person: </h2>
                         <form action="#">
                             <div>
                                 <label for="personCountryList">Country</label>
@@ -43,7 +44,26 @@
 
                 <div class="cardPrint">
                     <section class="list">
-                        <!---->
+                        <div>
+                            <h3>List and Salary Analysis:</h3>
+                        </div>
+
+                        <div>
+                            <!---->
+                        </div>
+
+                        <div>
+                            <form action="#">
+                                <label for="showCountrySalary">Select Country</label>
+                                <input type="text" id="showCountrySalary" list="CountryList"/>
+                                    <datalist id="CountryList">
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                    </datalist>
+                                <input type="button" value="Show"/>
+                            </form>
+                        </div>
                     </section>
                 </div>
             </div>
