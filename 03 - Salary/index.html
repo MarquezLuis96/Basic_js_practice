@@ -51,10 +51,36 @@
                         <div class="printSpace">
                             <section class="list-section">
                                 <h5>People list</h5>
+                                <div class="table">
+                                    <div class="table__names">
+                                        <ol id="table__names--list">
+                                            <!---->
+                                        </ol>
+                                    </div>
+                                    <div class="table__salary">
+                                        <ol id="table__salary--list">
+                                            <!---->
+                                        </ol>
+                                    </div>
+                                </div>
                             </section>
 
                             <section class="analysis-section">
                                 <h5>Analysis</h5>
+                                <div class="sheet">
+                                    <div class="promedio-sheet">
+                                        <h4>Mean:</h4>
+                                        <span id="print-mean"></span>
+                                    </div>
+                                    <div class="mediana-sheet">
+                                        <h4>Median:</h4>
+                                        <span id="print-median"></span>
+                                    </div> 
+                                    <div class="moda-sheet">
+                                        <h4>Mode:</h4>
+                                        <span id="print-mmode"></span>
+                                    </div>
+                                </div>
                             </section>  
                         </div>
 
@@ -67,7 +93,7 @@
                                         <option value="Uruguay">Uruguay</option>
                                         <option value="Venezuela">Venezuela</option>
                                     </datalist>
-                                <input type="button" value="Show"/>
+                                <input type="button" value="Show" id="btn-show"/>
                             </form>
                         </div>
                     </section>

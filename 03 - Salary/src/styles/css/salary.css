@@ -137,7 +137,65 @@ main .cards__container .cardPrint .list .printSpace .analysis-section {
     width: 40%;
     height: 90%;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--light-blue);
+}
+
+.printSpace .list-section .table {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.printSpace .list-section .table .table__names {
+    width: 40%;
+    height: 80%;
+}
+
+ol {
+    list-style: none;
+}
+
+.printSpace .list-section .table .table__names li {
+    text-align: left;
+}
+
+.printSpace .list-section .table .table__salary li {
+    text-align: center;
+}
+
+.printSpace .list-section .table .table__salary {
+    width: 40%;
+    height: 80%;
+}
+
+.analysis-section .sheet {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.analysis-section .sheet .promedio-sheet {
+    width: 80%;
+    height: 30%;
+}
+
+.analysis-section .sheet .mediana-sheet {
+    width: 80%;
+    height: 30%;
+}
+
+.analysis-section .sheet .moda-sheet {
+    width: 80%;
+    height: 30%;
 }
 
 main .cards__container .cardPrint .list .countrySelection {
