@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./src/styles/css/salary.css"/>
+        <title>Salary Calculator</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="cards__container">
+                <div class="cardAdd">
+                    <section class="addPerson">
+                        <h2>Add person: </h2>
+                        <form action="#">
+                            <div>
+                                <label for="personCountryList">Country</label>
+                                <input type="text" id="personCountryList" list="CountryList"/>
+                                    <datalist id="CountryList">
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                    </datalist>
+                            </div>
+
+                            <div>
+                                <label for="personName">Name</label>
+                                <input type="text" id="personName"/>
+                            </div>
+
+                            <div>
+                                <label for="personSalary">Salary</label>
+                            <input type="number" id="personSalary">
+                            </div>
+
+                            <div class="btn-add-container">
+                                <input type="button" value="Add Person" id="buttonAdd"/>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+                <div class="cardPrint">
+                    <section class="list">
+                        <div class="title">
+                            <h3>List and Salary Analysis:</h3>
+                        </div>
+
+                        <div class="printSpace">
+                            <section class="list-section">
+                                <h5>People list</h5>
+                                <div class="table">
+                                    <div class="table__names">
+                                        <ol id="table__names--list">
+                                            <!---->
+                                        </ol>
+                                    </div>
+                                    <div class="table__salary">
+                                        <ol id="table__salary--list">
+                                            <!---->
+                                        </ol>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="analysis-section">
+                                <h5>Analysis</h5>
+                                <div class="sheet">
+                                    <div class="promedio-sheet">
+                                        <h4>Mean:</h4>
+                                        <span id="print-mean"></span>
+                                    </div>
+                                    <div class="mediana-sheet">
+                                        <h4>Median:</h4>
+                                        <span id="print-median"></span>
+                                    </div> 
+                                    <div class="moda-sheet">
+                                        <h4>Mode:</h4>
+                                        <span id="print-mmode"></span>
+                                    </div>
+                                </div>
+                            </section>  
+                        </div>
+
+                        <div class="countrySelection">
+                            <form action="#">
+                                <label for="showCountrySalary">Select Country</label>
+                                <input type="text" id="showCountrySalary" list="CountryList"/>
+                                    <datalist id="CountryList">
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                    </datalist>
+                                <input type="button" value="Show" id="btn-show"/>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <script src="./src/scripts/js/salary.js"></script>
+        <script src="./src/scripts/js/analysis.js"></script>
+    </body>
+</html>
